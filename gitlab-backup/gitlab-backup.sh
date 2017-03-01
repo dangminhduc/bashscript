@@ -1,5 +1,5 @@
 #/bin/bash
-S3_BUCKET_TARGET="s3://gitlabdata-backup/NetMile/"
+S3_BUCKET_TARGET=""
 echo $S3_BUCKET_TARGET
 # Execute gitlab-backup
 /opt/gitlab/bin/gitlab-rake gitlab:backup:create
