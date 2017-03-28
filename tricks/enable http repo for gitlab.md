@@ -1,4 +1,6 @@
+First, edit gitlab.rb
 ```
+#/etc/gitlab/gitlab.rb
 nginx['enabled'] = true
 
 gitlab_git_http_server['listen_network'] = "tcp"
@@ -9,8 +11,9 @@ then reconfigure gitlab
 ```
 sudo gitlab-ctl reconfigure
 ```
-edit nginx setting 
+edit nginx setting (may be not needed)
 ```
+#/var/opt/gitlab/nginx/conf/gitlab-http.conf
 upstream gitlab {
     server unix:/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket;
 }
