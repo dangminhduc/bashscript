@@ -39,6 +39,6 @@ location ~* \.(git) {
 ```
 Then restart gitlab
 ```
-gitlab-ctl restart
+sudo gitlab-ctl restart
 ```
 
