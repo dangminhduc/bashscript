@@ -37,8 +37,8 @@ location ~* \.(git) {
     proxy_pass http://gitrepo;
 }
 ```
-Then restart nginx
+Then restart gitlab
 ```
-gitlab-ctl restart nginx
+sudo gitlab-ctl restart
 ```
 
